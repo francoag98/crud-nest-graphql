@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Developer {
+  id: Int!
+  nombre: String!
+  email: String!
+  rol: String!
+  proyects: String!
+}
+
+type Proyecto {
+  id: Int!
+  nombre: String!
+  descripcion: String!
+  status: Float!
+  devs: Developer
+  roles: String!
+}
+
+type Query {
+  proyecto: [Proyecto!]!
+}
